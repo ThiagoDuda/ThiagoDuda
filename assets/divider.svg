@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="1000" height="24" role="presentation" aria-hidden="true">
+  <style>
+    :root { --acc:#2dd4bf; --line:#1b2632; }
+    @media (prefers-color-scheme: light) { :root { --acc:#0f766e; --line:#d0d7de; } }
+    .base { stroke: var(--line); stroke-width: 2; stroke-linecap: round; }
+    .run { stroke: var(--acc); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 90 910; animation: run 5s linear infinite; }
+    .dot { fill: var(--acc); }
+    @keyframes run { from { stroke-dashoffset: 90; } to { stroke-dashoffset: -910; } }
+    @media (prefers-reduced-motion: reduce) { .run { animation: none; stroke-dashoffset: -400; } }
+  </style>
+  <line class="base" x1="8" y1="12" x2="992" y2="12"/>
+  <line class="run" x1="8" y1="12" x2="992" y2="12" pathLength="1000"/>
+  <circle class="dot" cx="500" cy="12" r="3.5"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="1000" height="120" role="presentation" aria-hidden="true">
+  <style>
+    :root { --acc:#2dd4bf; }
+    @media (prefers-color-scheme: light) { :root { --acc:#0f766e; } }
+    .w { fill: var(--acc); }
+    .w1 { opacity: .12; animation: drift 14s ease-in-out infinite alternate; }
+    .w2 { opacity: .22; animation: drift 10s ease-in-out infinite alternate-reverse; }
+    .w3 { opacity: .4;  animation: drift 7s ease-in-out infinite alternate; }
+    @keyframes drift { from { transform: translateX(-60px); } to { transform: translateX(0); } }
+    @media (prefers-reduced-motion: reduce) { .w1,.w2,.w3 { animation: none; } }
+  </style>
+  <g>
+    <path class="w w1" d="M-60 60 C 100 20, 220 100, 380 60 S 640 20, 800 60 S 1000 100, 1120 60 V120 H-60Z"/>
+    <path class="w w2" d="M-60 80 C 120 50, 260 110, 420 80 S 680 50, 840 80 S 1000 110, 1120 80 V120 H-60Z"/>
+    <path class="w w3" d="M-60 100 C 140 80, 280 118, 440 100 S 700 80, 860 100 S 1000 118, 1120 100 V120 H-60Z"/>
+  </g>
+</svg>
